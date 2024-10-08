@@ -1,0 +1,26 @@
+GET http://localhost:5080/orders
+
+###
+POST http://localhost:5080/orders
+Content-Type: application/json
+{
+"number"                        :  "3" ,
+"tele"                          :  "1" ,
+"apart"                         :  "1" ,
+"fio"                           :  "1" ,
+"shel"                          :  "1" ,
+"adres"                         :  "1" ,
+"checkOutDate1"                 :  "2023-10-05T00:00:00" ,
+"checkInDate1"                  :  "2023-11-05T00:00:00" ,
+"master" : "Нет"
+}
+
+###
+PUT http://localhost:5080/orders/1
+Content-Type: application/json
+{
+    "checkOutDate1"                 :  "2023-10-05T00:00:00" ,
+    "checkInDate1"                  :  "2023-11-05T00:00:00" ,
+    "shel" : "Хочу пиццу",
+    "master" : "Мишаня"
+}
